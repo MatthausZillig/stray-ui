@@ -13,16 +13,28 @@ npm install --save react-stray-ui
 ## Usage
 
 ```jsx
-import React, { Component } from 'react'
 
-import MyComponent from 'react-stray-ui'
-import 'react-stray-ui/dist/index.css'
+import { Grid, Item, Heading, Paragraph } from 'react-stray-ui'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+<Grid
+      areas={['hello']}
+      rows='1fr 1fr 1fr'
+      columns='repeat(3, minmax(100px, 1fr))'
+      space='24px'
+    >
+      <Item first>
+        <div
+          style={{ width: '700px', height: '100px', border: '1px solid red' }}
+        >
+          <Heading tag='h1' motion duration='400' reset>
+            Título
+          </Heading>
+          <Paragraph size='24px' weight='bold' smSize='12px' align='left'>
+            Isso é um texto!
+          </Paragraph>
+        </div>
+      </Item>
+      <Item first>
 ```
 
 ## License
