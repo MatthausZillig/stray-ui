@@ -15,7 +15,7 @@ export const ExampleComponent = ({ text }) => {
         <div
           style={{ width: '700px', height: '100px', border: '1px solid red' }}
         >
-          <Heading tag='h6' reset>
+          <Heading tag='h1' motion duration='400' reset>
             Título
           </Heading>
           <Paragraph size='24px' weight='bold' smSize='12px' align='left'>
