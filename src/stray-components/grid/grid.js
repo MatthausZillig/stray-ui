@@ -8,6 +8,10 @@ const formatMobileAreas = (mobileAreas) =>
 export const Item = styled.div`
   display: flex;
   flex-direction: ${({ flexDirection }) => flexDirection};
+  ${({ test }) => test && 'background-color: #ccc'};
+  ${({ test }) => test && 'width: 100%'};
+  ${({ test }) => test && 'border-radius: 7px'};
+  ${({ test }) => test && 'height: 100%'};
   flex: ${({ flex }) => flex};
   order: ${({ order }) => order};
   grid-column: ${(props) => props.col};
@@ -15,7 +19,6 @@ export const Item = styled.div`
   ${({ area }) => area && `grid-area: ${area}`};
   justify-self: ${(props) => props.justifySelf};
   align-self: ${(props) => props.alignSelf};
-  ${({ first }) => first && `margin-top: 24px`};
 `
 
 export const Grid = styled.section`
@@ -38,5 +41,8 @@ export const Grid = styled.section`
     padding-left: 16px;
     padding-right: 16px;
     margin-bottom: 16px;
+    ${({ responsive }) =>
+      responsive &&
+      `grid-template-columns: repeat( auto-fit, minmax(320px, 1fr) )`}
   }
 `

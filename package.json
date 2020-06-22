@@ -1,16 +1,23 @@
 {
   "name": "react-stray-ui",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A react framework ui components.",
   "author": "MatthausZillig",
   "license": "MIT",
-  "repository": "MatthausZillig/react-stray-ui",
+  "repository": "MatthausZillig/stray-ui",
   "main": "dist/index.js",
   "module": "dist/index.modern.js",
   "source": "src/index.js",
   "engines": {
     "node": ">=10"
   },
+  "keywords": [
+    "grid",
+    "css",
+    "react",
+    "styled-components",
+    "flexbox"
+  ],
   "scripts": {
     "build": "microbundle-crl --no-compress --format modern,cjs",
     "start": "microbundle-crl watch --no-compress --format modern,cjs",

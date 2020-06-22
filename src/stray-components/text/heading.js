@@ -41,9 +41,9 @@ export const Heading = ({ tag, children, reset, motion, duration }) => {
             key={items[index]}
             style={{
               ...rest,
-              transform: x.interpolate((x) => `translate3d(0,${x}px,0)`)
+              transform: x.interpolate((x) => `translate3d(0,${x}px,0)`),
+              margin: reset ? '0' : null
             }}
-            className={reset ? text.headingReset : null}
           >
             {items[index]}
           </animated.h2>
