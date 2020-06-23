@@ -1,1 +1,11 @@
 /* add css module styles here (optional) */
+.headingReset {
+  margin: 0px;
+  padding: 0px;
+}
+
+.ulReset {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}

@@ -1,7 +1,7 @@
 {
   "name": "react-stray-ui",
   "version": "1.0.1",
-  "description": "A react framework ui components.",
+  "description": "Simple ui component library, to make development faster.",
   "author": "MatthausZillig",
   "license": "MIT",
   "repository": "MatthausZillig/stray-ui",
